@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+    <div class="container">
+        <div class="conversion">
+            <label for="celsius">Celsius:</label>
+            <input type="text" id="celsius">
+            <button onclick="convertToAll('celsius')">Convert</button>
+        </div>
+        <div class="conversion">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="text" id="fahrenheit">
+            <button onclick="convertToAll('fahrenheit')">Convert</button>
+        </div>
+        <div class="conversion">
+            <label for="kelvin">Kelvin:</label>
+            <input type="text" id="kelvin">
+            <button onclick="convertToAll('kelvin')">Convert</button>
+        </div>
+        <div class="conversion">
+            <label for="rankine">Rankine:</label>
+            <input type="text" id="rankine" >
+            <button onclick="convertToAll('rankine')">Convert</button>
+        </div>
+    </div>
+    <div class="result">
+        <h2>Conversion Results</h2>
+        <div id="results">
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Temperature Converter
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
